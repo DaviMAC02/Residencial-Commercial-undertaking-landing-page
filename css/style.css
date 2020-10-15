@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/********************/
+
+header {
+    background-color: rgb(220, 220, 220);
+    padding: 10px 2% 40px 2%;
+}
+
+.logo-1 {
+    float: left;
+    width: 150px;
+    height: 60px;
+    background-image: url("../img/logo1.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-2 {
+    float: right;
+    width: 150px;
+    height: 60px;
+    background-image: url("../img/logo2.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.cover-form {
+    width: 100%;
+}
+
+.bg {
+    height: 500px;
+    background-image: url("../img/bg-form.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    float: right;
+    width: 96%;
+    max-width: 400px;
+    height: 110%;
+    z-index: 2;
+    position: relative;
+    top: -5%;
+    margin-right: 40px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(180, 180, 180);
+}
+
+.form-container h2 {
+    padding: 25px 15px;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    background-color: #e6ecf0;
+}
+
+.form-container form {
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container form label {
+    font-size: 13px;
+    color: #525252;
+}
+
+.form-container form input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.form-wraper:not(:first-child) {
+    margin-top: 40px;
+}
+
+.form-wraper:last-child {
+    margin-top: 20px;
+}
+
+.form-wraper:nth-child(4) {
+    text-align: center;
+}
+
+.form-container form input[type="submit"] {
+    background-color: #0f6e8e;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    width: 280px;
+    font-size: 25px;
+    height: 50px;
+    border: 0;
+    border-bottom: 5px solid #0d6380;
+    transition: 0.2s;
+}
+
+.form-container form input[type="submit"]:hover {
+    background-color: #0d6380;
+}
+
+div.down-arrow {
+    width: 65px;
+    height: 65px;
+    background-color: #0f6e8e;
+    position: relative;
+    top: calc((5% + 58px) * -1);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 32.5px;
+    border: 3px solid white;
+}
+
+img.arrow {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+}
+
+section.chamada {
+    z-index: 1;
+    background-color: #e6ecf0;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+}
+
+section.chamada h1 {
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: black;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+section.chamada h2 {
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: black;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.flex-mosaico {
+    display: flex;
+    margin-top: 3px;
+}
+
+.item-1-mosaico {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico {
+    width: 40%;
+    padding: 125px 40px;
+    background-color: #e4f3fe;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer .container {
+    background-color: #e6ecf0;
+    height: 265px;
+    margin: 3px auto;
+    text-align: center;
+    padding: 3.5% 1%;
+}
+
+.footer .container h3 {
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+    font-weight: bolder;
+}
+
+.footer .container p {
+    text-decoration: underline;
+    line-height: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .container {
+    height: 190px;
+    text-align: center;
+    padding-top: 2.5%;
+}
+
+footer>p {
+    color: #ccc;
+}
+
+.rodape-logo {
+    width: 150px;
+    height: 60px;
+    background-image: url("../img/logo1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 960px) {
+    .form-container {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    div.down-arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-mosaico {
+        flex-wrap: wrap;
+    }
+    .item-1-mosaico {
+        width: 100%;
+        padding-top: 80%;
+        margin-top: 100px;
+    }
+    div.first {
+        margin-top: 3px;
+    }
+    .item-2-mosaico {
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    header {
+        text-align: center;
+    }
+    /*Tudo que começa com logo irá atribuir esse CSS*/
+    [class^="logo"] {
+        margin-top: 10px;
+        float: none;
+        display: inline-block;
+    }
+}
